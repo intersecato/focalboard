@@ -30,7 +30,7 @@ const LoginPage = () => {
                 history.push('/')
             }
         } else {
-            setErrorMessage('Login failed')
+            setErrorMessage('Accesso non consentito')
         }
     }
 
@@ -55,7 +55,7 @@ const LoginPage = () => {
                 <div className='username'>
                     <input
                         id='login-username'
-                        placeholder={'Enter username'}
+                        placeholder={'Inserisci username'}
                         value={username}
                         onChange={(e) => {
                             setUsername(e.target.value)
@@ -67,7 +67,7 @@ const LoginPage = () => {
                     <input
                         id='login-password'
                         type='password'
-                        placeholder={'Enter password'}
+                        placeholder={'Inserisci password'}
                         value={password}
                         onChange={(e) => {
                             setPassword(e.target.value)
@@ -85,12 +85,7 @@ const LoginPage = () => {
                     />
                 </Button>
             </form>
-            <Link to='/register'>
-                <FormattedMessage
-                    id='login.register-button'
-                    defaultMessage={'or create an account if you don\'t have one'}
-                />
-            </Link>
+
             {errorMessage &&
                 <div className='error'>
                     {errorMessage}

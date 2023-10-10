@@ -42,7 +42,7 @@ const SidebarUserMenu = () => {
                     <div className='logo'>
                         <div className='logo-title'>
                             <FocalboardLogoIcon/>
-                            <span>{'Focalboard'}</span>
+                            <span>{'AtlantisRP'}</span>
                             <div className='versionFrame'>
                                 <div
                                     className='version'
@@ -72,18 +72,18 @@ const SidebarUserMenu = () => {
                                     history.push('/change_password')
                                 }}
                             />
-                            <Menu.Text
+                            {/*<Menu.Text
                                 id='invite'
                                 name={intl.formatMessage({id: 'Sidebar.invite-users', defaultMessage: 'Invite users'})}
                                 onClick={async () => {
                                     setShowRegistrationLinkDialog(true)
                                 }}
-                            />
+                            />*/}
 
-                            <Menu.Separator/>
+                            {/*<Menu.Separator/>*/}
                         </>}
 
-                        <Menu.Text
+                        {/*<Menu.Text
                             id='about'
                             name={intl.formatMessage({id: 'Sidebar.about', defaultMessage: 'About Focalboard'})}
                             onClick={async () => {
@@ -94,7 +94,7 @@ const SidebarUserMenu = () => {
                                     window.openInNewBrowser('https://www.focalboard.com?utm_source=webapp')
                                 }
                             }}
-                        />
+                        />*/}
                     </Menu>
                 </MenuWrapper>
 

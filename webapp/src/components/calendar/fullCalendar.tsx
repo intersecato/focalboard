@@ -8,6 +8,7 @@ import FullCalendar, {EventChangeArg, EventInput, EventContentArg, DayCellConten
 
 import interactionPlugin from '@fullcalendar/interaction'
 import dayGridPlugin from '@fullcalendar/daygrid'
+import itLocale from '@fullcalendar/core/locales/it';
 
 import {DatePropertyType} from '../../properties/types'
 
@@ -291,6 +292,8 @@ const CalendarFullView = (props: Props): JSX.Element|null => {
                 selectable={isSelectable}
                 selectMirror={true}
                 select={onNewEvent}
+                firstDay = {1}
+                locale = {itLocale}
             />
             {showConfirmationDialogBox && <ConfirmationDialogBox dialogBox={confirmDialogProps}/>}
         </div>

@@ -17,17 +17,7 @@ const TopBar = (): JSX.Element => {
             <div
                 className='TopBar'
             >
-                <a
-                    className='link'
-                    href={feedbackUrl}
-                    target='_blank'
-                    rel='noreferrer'
-                >
-                    <FormattedMessage
-                        id='TopBar.give-feedback'
-                        defaultMessage='Give feedback'
-                    />
-                </a>
+
                 <div className='versionFrame'>
                     <div
                         className='version'
@@ -45,24 +35,7 @@ const TopBar = (): JSX.Element => {
         <div
             className='TopBar'
         >
-            <a
-                className='link'
-                href={focalboardFeedbackUrl}
-                target='_blank'
-                rel='noreferrer'
-            >
-                <FormattedMessage
-                    id='TopBar.give-feedback'
-                    defaultMessage='Give feedback'
-                />
-            </a>
-            <a
-                href='https://www.focalboard.com/guide/user?utm_source=webapp'
-                target='_blank'
-                rel='noreferrer'
-            >
-                <HelpIcon/>
-            </a>
+
         </div>
     )
 }

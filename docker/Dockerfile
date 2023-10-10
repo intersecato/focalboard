@@ -36,9 +36,7 @@ COPY --from=gobuild --chown=nobody:nogroup /go/src/focalboard/docker/server_conf
 
 USER nobody
 
-EXPOSE 8000/tcp
-
-EXPOSE 8000/tcp 9092/tcp
+EXPOSE 4000
 
 VOLUME /opt/focalboard/data
 
