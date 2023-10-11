@@ -257,6 +257,10 @@ const ViewMenu = (props: Props) => {
         id: 'View.Gallery',
         defaultMessage: 'Gallery',
     })
+    const calendarText = intl.formatMessage({
+        id: 'View.Calendar',
+        defaultMessage: 'Calendar',
+    })
 
     const iconForViewType = (viewType: IViewType) => {
         switch (viewType) {
@@ -332,7 +336,7 @@ const ViewMenu = (props: Props) => {
                             />
                             <Menu.Text
                                 id='calendar'
-                                name='Calendar'
+                                name={calendarText}
                                 icon={<CalendarIcon/>}
                                 onClick={handleAddViewCalendar}
                             />

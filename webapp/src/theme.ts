@@ -118,7 +118,7 @@ export function setTheme(theme: Theme | null): Theme {
         UserSettings.theme = ''
         const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)')
         if (darkThemeMq.matches) {
-            consolidatedTheme = {...defaultTheme, ...darkTheme}
+            consolidatedTheme = {...defaultTheme, ...defaultTheme}
         }
     }
 
