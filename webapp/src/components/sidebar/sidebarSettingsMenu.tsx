@@ -55,22 +55,22 @@ const SidebarSettingsMenu = (props: Props) => {
     const themes = [
         {
             id: defaultThemeName,
-            displayName: 'Default theme',
+            displayName: 'Tema di default',
             theme: defaultTheme,
         },
         {
             id: darkThemeName,
-            displayName: 'Dark theme',
+            displayName: 'Tema scuro',
             theme: darkTheme,
         },
         {
             id: lightThemeName,
-            displayName: 'Light theme',
+            displayName: 'Tema chiaro',
             theme: lightTheme,
         },
         {
             id: systemThemeName,
-            displayName: 'System theme',
+            displayName: 'Tema di sistema',
             theme: null,
         },
     ]
