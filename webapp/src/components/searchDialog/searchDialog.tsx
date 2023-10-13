@@ -3,7 +3,7 @@
 import React, {ReactNode, useEffect, useMemo, useState} from 'react'
 
 import './searchDialog.scss'
-import {FormattedMessage} from 'react-intl'
+import {useIntl, FormattedMessage} from 'react-intl'
 
 import {debounce} from 'lodash'
 
@@ -60,6 +60,7 @@ export const EmptyResults = (props: {query: string}): JSX.Element => (
 )
 
 const SearchDialog = (props: Props): JSX.Element => {
+    const intl = useIntl()
     const {selected, setSelected} = props
     const [results, setResults] = useState<ReactNode[]>(props.initialData || [])
     const [isSearching, setIsSearching] = useState<boolean>(false)
@@ -116,7 +117,7 @@ const SearchDialog = (props: Props): JSX.Element => {
                         <Search/>
                         <input
                             className='searchQuery'
-                            placeholder='Search for boards'
+                            placeholder={intl.formatMessage({id: 'FindBoardsDialog.IntroText', defaultMessage:'Search for boards'})}
                             type='text'
                             onChange={(e) => debouncedSearchHandler(e.target.value)}
                             autoFocus={true}
