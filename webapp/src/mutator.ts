@@ -1025,7 +1025,7 @@ class Mutator {
                     newRootBlock.title = `${newRootBlock.title} copy`
                 } else if (asTemplate) {
                     // Template from card
-                    newRootBlock.title = 'New card template'
+                    newRootBlock.title = 'Nuovo template'
                 } else {
                     // Card from template
                     newRootBlock.title = ''
