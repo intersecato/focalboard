@@ -23,9 +23,9 @@ const SetWindowTitleAndIcon = (): null => {
             }
             document.title = title
         } else if (Utils.isFocalboardPlugin()) {
-            document.title = 'Boards - Mattermost'
+            document.title = 'Boards - AtlantisRP'
         } else {
-            document.title = 'Focalboard'
+            document.title = 'AtlantisRP Project Manager'
         }
     }, [board?.title, activeView?.title])
 
