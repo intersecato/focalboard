@@ -55,10 +55,7 @@ const CommentsList = (props: Props) => {
 
     const newCommentComponent = (
         <div className='CommentsList__new'>
-            <img
-                className='comment-avatar'
-                src={Utils.getProfilePicture(me?.id)}
-            />
+
             <MarkdownEditor
                 className='newcomment'
                 text={newComment}
@@ -99,7 +96,6 @@ const CommentsList = (props: Props) => {
                     <Comment
                         key={comment.id}
                         comment={comment}
-                        userImageUrl={Utils.getProfilePicture(comment.modifiedBy)}
                         userId={comment.modifiedBy}
                         readonly={props.readonly || !canDeleteComment}
                     />

@@ -21,12 +21,11 @@ import './comment.scss'
 type Props = {
     comment: Block
     userId: string
-    userImageUrl: string
     readonly: boolean
 }
 
 const Comment: FC<Props> = (props: Props) => {
-    const {comment, userId, userImageUrl} = props
+    const {comment, userId} = props
     const intl = useIntl()
     const html = Utils.htmlFromMarkdown(comment.title)
     const user = useAppSelector(getUser(userId))
@@ -38,10 +37,7 @@ const Comment: FC<Props> = (props: Props) => {
             className='Comment comment'
         >
             <div className='comment-header'>
-                <img
-                    className='comment-avatar'
-                    src={userImageUrl}
-                />
+
                 <div className='comment-username'>{user?.username}</div>
                 <GuestBadge show={user?.is_guest}/>
 

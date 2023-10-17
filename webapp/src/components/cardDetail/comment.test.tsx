@@ -27,8 +27,6 @@ comment.createAt = dateFixed
 comment.updateAt = dateFixed
 comment.title = 'Test comment'
 
-const userImageUrl = 'data:image/svg+xml'
-
 describe('components/cardDetail/comment', () => {
     const state = {
         users: {
@@ -56,7 +54,6 @@ describe('components/cardDetail/comment', () => {
                 <Comment
                     comment={comment}
                     userId={comment.modifiedBy}
-                    userImageUrl={userImageUrl}
                     readonly={false}
                 />
             </ReduxProvider>,
@@ -72,7 +69,6 @@ describe('components/cardDetail/comment', () => {
                 <Comment
                     comment={comment}
                     userId={comment.modifiedBy}
-                    userImageUrl={userImageUrl}
                     readonly={true}
                 />
             </ReduxProvider>,
@@ -86,7 +82,6 @@ describe('components/cardDetail/comment', () => {
                 <Comment
                     comment={comment}
                     userId={comment.modifiedBy}
-                    userImageUrl={userImageUrl}
                     readonly={false}
                 />
             </ReduxProvider>,
@@ -107,7 +102,6 @@ describe('components/cardDetail/comment', () => {
                 <Comment
                     comment={comment}
                     userId={comment.modifiedBy}
-                    userImageUrl={userImageUrl}
                     readonly={false}
                 />
             </ReduxProvider>,
@@ -124,7 +118,6 @@ describe('components/cardDetail/comment', () => {
                 <Comment
                     comment={comment}
                     userId={comment.modifiedBy}
-                    userImageUrl={userImageUrl}
                     readonly={true}
                 />
             </ReduxProvider>,
@@ -139,7 +132,6 @@ describe('components/cardDetail/comment', () => {
                 <Comment
                     comment={comment}
                     userId={comment.modifiedBy}
-                    userImageUrl={userImageUrl}
                     readonly={false}
                 />
             </ReduxProvider>,
