@@ -36,12 +36,9 @@ import {getClientConfig} from '../../store/clientConfig'
 
 import Entry from './entryComponent/entryComponent'
 
-const imageURLForUser = (window as any).Components?.imageURLForUser
-
 type MentionUser = {
     user: IUser
     name: string
-    avatar: string
     is_bot: boolean
     is_guest: boolean
     displayName: string
@@ -96,7 +93,6 @@ const MarkdownEditorInput = (props: Props): ReactElement => {
         const mentions: MentionUser[] = users.map(
             (user: IUser): MentionUser => ({
                 name: user.username,
-                avatar: `${imageURLForUser ? imageURLForUser(user.id) : ''}`,
                 is_bot: user.is_bot,
                 is_guest: user.is_guest,
                 displayName: Utils.getUserDisplayName(user, clientConfig.teammateNameDisplay),

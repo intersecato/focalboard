@@ -23,11 +23,6 @@ const Entry = (props: EntryComponentProps): ReactElement => {
         >
             <div className={`${theme?.mentionSuggestionsEntryContainer} EntryComponent`}>
                 <div className='EntryComponent__left'>
-                    <img
-                        src={mention.avatar}
-                        className={theme?.mentionSuggestionsEntryAvatar}
-                        role='presentation'
-                    />
                     <div className={theme?.mentionSuggestionsEntryText}>
                         {mention.name}
                         {BotBadge && mention.is_bot && <BotBadge/>}

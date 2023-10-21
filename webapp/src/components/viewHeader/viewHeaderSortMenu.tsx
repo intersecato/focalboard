@@ -66,13 +66,13 @@ const ViewHeaderSortMenu = (props: Props) => {
                 <>
                     <Menu.Text
                         id='manual'
-                        name='Manual'
+                        name='Manuale'
                         onClick={onManualSort}
                     />
 
                     <Menu.Text
                         id='revert'
-                        name='Revert'
+                        name='Ripristina'
                         onClick={onRevertSort}
                     />
 
