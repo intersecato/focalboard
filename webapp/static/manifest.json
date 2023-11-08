@@ -1,0 +1,28 @@
+{
+    "name": "AtlantisRP - Project Manager",
+    "short_name": "AtlantisRP",
+    "display": "standalone",
+    "icons": [
+      {
+          "src": "https:\/\/i.imgur.com\/fvJmHgq.png",
+          "sizes": "192x192",
+          "purpose": "any"
+      },
+      {
+          "src": "https:\/\/i.imgur.com\/fvJmHgq.png",
+          "sizes": "192x192",
+          "purpose": "maskable"
+      },
+      {
+          "src": "https:\/\/i.imgur.com\/MdPelg7.png",
+          "sizes": "512x512",
+          "purpose": "any"
+      },
+      {
+          "src": "https:\/\/i.imgur.com\/MdPelg7.png",
+          "sizes": "512x512",
+          "purpose": "maskable"
+      }
+  ],
+  "start_url": "https://board.atlantisrp.it"
+  }
