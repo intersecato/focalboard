@@ -8,7 +8,6 @@ import {useHistory} from 'react-router-dom'
 import {Constants} from '../../constants'
 import octoClient from '../../octoClient'
 import {IUser} from '../../user'
-import FocalboardLogoIcon from '../../widgets/icons/focalboard_logo'
 import Menu from '../../widgets/menu'
 import MenuWrapper from '../../widgets/menuWrapper'
 import {getMe, setMe} from '../../store/users'
@@ -41,7 +40,11 @@ const SidebarUserMenu = () => {
                 <MenuWrapper>
                     <div className='logo'>
                         <div className='logo-title'>
-                            <FocalboardLogoIcon/>
+                        <img
+                            src='../../../static/atlantisrp/logo.png'
+                            alt='AtlantisRP'
+                            style={{ width: '40px', height: '40px' }}
+                        />
                             <span>{'AtlantisRP'}</span>
                             <div className='versionFrame'>
                                 <div
