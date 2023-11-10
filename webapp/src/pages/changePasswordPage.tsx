@@ -20,7 +20,7 @@ const ChangePasswordPage = () => {
     if (!user) {
         return (
             <div className='ChangePasswordPage'>
-                <div className='title'>{'Change Password'}</div>
+                <div className='title'>{'Modifica Password'}</div>
                 <Link to='/login'>{'Log in first'}</Link>
             </div>
         )
@@ -40,7 +40,7 @@ const ChangePasswordPage = () => {
 
     return (
         <div className='ChangePasswordPage'>
-            <div className='title'>{'Change Password'}</div>
+            <div className='title'>{'Modifica Password'}</div>
             <form
                 onSubmit={(e: React.FormEvent) => {
                     e.preventDefault()
@@ -51,7 +51,7 @@ const ChangePasswordPage = () => {
                     <input
                         id='login-oldpassword'
                         type='password'
-                        placeholder={'Enter current password'}
+                        placeholder={'Inserisci password attuale'}
                         value={oldPassword}
                         onChange={(e) => {
                             setOldPassword(e.target.value)
@@ -63,7 +63,7 @@ const ChangePasswordPage = () => {
                     <input
                         id='login-newpassword'
                         type='password'
-                        placeholder={'Enter new password'}
+                        placeholder={'Inserisci nuova password'}
                         value={newPassword}
                         onChange={(e) => {
                             setNewPassword(e.target.value)
@@ -75,7 +75,7 @@ const ChangePasswordPage = () => {
                     filled={true}
                     submit={true}
                 >
-                    {'Change password'}
+                    {'Modifica Password'}
                 </Button>
             </form>
             {errorMessage &&
@@ -87,10 +87,10 @@ const ChangePasswordPage = () => {
                 <Link
                     className='succeeded'
                     to='/'
-                >{'Password changed, click to continue.'}</Link>
+                >{'Password modificata! Clicca per conitnuare'}</Link>
             }
             {!succeeded &&
-                <Link to='/'>{'Cancel'}</Link>
+                <Link to='/'>{'Annulla'}</Link>
             }
         </div>
     )

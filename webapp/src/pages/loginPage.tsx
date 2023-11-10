@@ -40,6 +40,13 @@ const LoginPage = () => {
 
     return (
         <div className='LoginPage'>
+            <div className='logo-container'>
+                <img
+                    src='../../static/atlantisrp/logo.png'
+                    alt='AtlantisRP'
+                    className='logo'
+                />
+            </div>
             <form
                 onSubmit={(e: React.FormEvent) => {
                     e.preventDefault()
